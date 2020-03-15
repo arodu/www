@@ -1,0 +1,156 @@
+.well {
+  padding: 1rem;
+  background-color: $light;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+.text-small{
+  font-size: .8rem;
+}
+
+.social-link{
+  opacity: .6;
+  &:hover{
+    opacity: 1;
+  }
+}
+
+.muted{
+  color: $gray;
+  //opacity: .6;
+}
+
+.tag-list{
+  display: flex;
+
+  .title{
+    margin-right: .4rem;
+  }
+
+  .items{
+
+  }
+}
+
+
+
+// -- go to top
+
+#btn-top {
+  display: none;
+  z-index: 999;
+  position: fixed;
+    right: 6px;
+    bottom: 36px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 1.8rem;
+    border: none;
+  cursor: pointer;
+  border-radius: 4px;
+
+  width: 2rem;
+  height: 2rem;
+
+  line-height: 2rem;
+  text-align: center;
+
+  transition: all .2s;
+  opacity: .5;
+
+  &:hover{
+    opacity: 1;
+  }
+}
+// -- /go to top
+
+// -- footer
+.content {
+  min-height: calc(100vh - 30px);
+}
+.footer{
+  height: 30px;
+  background-color: $light;
+  font-size: .8rem;
+  padding-top: .5rem !important;
+  padding-bottom: .5rem  !important;
+  padding-right: 1rem;
+  text-align: right;
+  margin-left: auto;
+  z-index: 0;
+  text-align: center;
+  a{
+    color: #666;
+  }
+  @media (min-width: 48em) {
+    text-align: right;
+  }
+}
+
+// -- /footer
+
+ul {
+  & > li {
+    list-style: disc;
+  }
+
+
+}
+ul.unstyle, ol.unstyle {
+    padding-left: 0;
+}
+ul.unstyle > li, ol.unstyle > li {
+    list-style: none;
+}
+
+@media (min-width: 48em) {
+  .content {
+    max-width: 48rem;
+  }
+}
+.text-gray{
+  color: #999;
+}
+.text-black{
+  color: #000;
+}
+.about-item{
+  padding-top: 2rem;
+}
+
+/*****************/
+
+.personal-info{
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  justify-content: space-between;
+
+  .image{
+    order: 1;
+    align-self: center;
+  }
+  .info{
+    order: 2;
+    width: 100%;
+  }
+
+  @media (min-width: 48em) {
+    flex-direction: row;
+
+    .info{
+      /*margin-right: 2rem;*/
+    }
+    .image{
+      max-width: 150px;
+      order: 3;
+    }
+    .image img{
+      margin-bottom: 0;
+    }
+  }
+
+}

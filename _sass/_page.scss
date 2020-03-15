@@ -1,0 +1,82 @@
+
+.related-posts .description{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.page-title .muted{
+  display: block;
+  @media (min-width: 48em) {
+    display: inline-block;
+  }
+}
+
+.page-title, .post-title {
+  border-bottom: 1px solid $light;
+  margin-bottom: 2.4rem;
+}
+.page-title + .page-subtitle, .post-title + .post-subtitle {
+  display: flex;
+  position: relative;
+  top: -2.4rem;
+}
+
+.post-date {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  font-size: .85rem;
+}
+
+.item-post {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid $light;
+  padding-bottom: 1rem;
+
+  &.no-border{
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  &:last-child{
+    border-bottom: none;
+  }
+
+  h3 small{
+    color: $gray;
+  }
+
+  img{
+    border-radius: 0;
+  }
+
+  .description{
+    display: block;
+
+    .thumbnail {
+      width: 100%;
+      margin-bottom: 1rem;
+      img{
+        margin: 0 auto;
+      }
+    }
+
+    @media (min-width: 48em) {
+      display: flex;
+      align-items: flex-start;
+
+      .thumbnail {
+        margin-right: 1em;
+        width: 100px;
+      }
+      .text {
+        flex: 1;
+      }
+    }
+
+  }
+
+}

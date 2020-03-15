@@ -1,0 +1,13 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import
+  "poole",
+  "syntax",
+  "hyde",
+  "style";
+
+.theme-background .sidebar {
+  background-image: url("{{ site.baseurl }}/public/img/background.jpg");
+}

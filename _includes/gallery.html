@@ -1,0 +1,13 @@
+{% assign images = include.content | split: "," %}
+
+<div class="gallery">
+  <div class="nav">
+    {% for image in images %}
+    <div><img src="{{ site.baseurl }}{{ image }}" data-src="{{ site.baseurl }}{{ image | replace: '.min', '' }}"/></div>
+    {% endfor %}
+  </div>
+  <div class="viewer">
+    <img src="{{ site.baseurl }}{{ images[0] | replace: '.min', '' }}" />
+  </div>
+
+</div>

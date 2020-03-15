@@ -1,0 +1,89 @@
+/* Red */
+.theme-base-08 .bg-color {
+  background-color: #ac4142 !important;
+}
+.theme-base-08 .text-color {
+  color: #ac4142 !important;
+}
+
+/* Orange */
+.theme-base-09 .bg-color {
+  background-color: #d28445 !important;
+}
+.theme-base-09 .text-color {
+  color: #d28445 !important;
+}
+
+/* Yellow */
+.theme-base-0a .bg-color {
+  background-color: #f4bf75 !important;
+}
+.theme-base-0a .text-color {
+  color: #f4bf75 !important;
+}
+
+/* Green */
+.theme-base-0b .bg-color {
+  background-color: #90a959 !important;
+}
+.theme-base-0b .text-color {
+  color: #90a959 !important;
+}
+
+/* Cyan */
+.theme-base-0c .bg-color {
+  background-color: #75b5aa !important;
+}
+.theme-base-0c .text-color {
+  color: #75b5aa !important;
+}
+
+/* Blue */
+.theme-base-0d .bg-color {
+  background-color: #6a9fb5 !important;
+}
+.theme-base-0d .text-color {
+  color: #6a9fb5 !important;
+}
+
+/* Magenta */
+.theme-base-0e .bg-color  {
+  background-color: #aa759f !important;
+}
+.theme-base-0e .text-color {
+  color: #aa759f !important;
+}
+
+/* Brown */
+.theme-base-0f .bg-color  {
+  background-color: #8f5536 !important;
+}
+.theme-base-0f .text-color {
+  color: #8f5536 !important;
+}
+
+
+
+.theme-background .sidebar {
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+.theme-background .sidebar::before {
+  content: "";
+  background-color:
+  rgba(0,0,0,.7);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.theme-background .sidebar {
+  position: relative;
+  @media (min-width: 48em) {
+      position: fixed;
+  }
+}

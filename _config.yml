@@ -1,26 +1,55 @@
 # Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+markdown:         kramdown
+highlighter:      rouge
+
+#gems: [jekyll-gist]
+
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
 
 # Permalinks
-permalink:        pretty
-relative_permalinks: true
+permalink:        /:categories/:title/
+
+# relative_permalinks: true
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
-baseurl:          /
+title: "arodu Personal Website"
+url:  https://arodu.github.io
+baseurl: ""
 
+description:      Software developer, Teacher and GNU/Linux fanboy.
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name: "Alberto G. Rodriguez U."
+  email: arodu.dev@gmail.com
 
-paginate:         5
+
+excerpt_separator: "<!--more-->"
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-feed
+
+paginate:         6
 
 # Custom vars
-version:          2.1.0
+version:          1.0.0
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo: https://github.com/arodu/www
+
+logo: /public/avataaars.png
+
+social:
+  name: arodu
+  links:
+    - https://github.com/arodu
+    - https://www.facebook.com/arodu.dev
+    - https://www.linkedin.com/in/arodu
+    - https://twitter.com/arodu

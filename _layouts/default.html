@@ -1,15 +1,23 @@
+---
+image: /public/avataaars.png
+---
+
 <!DOCTYPE html>
 <html lang="en-us">
 
   {% include head.html %}
 
-  <body>
+  <body class="theme-base-0d theme-background">
 
     {% include sidebar.html %}
 
-    <div class="content container">
+    <section class="content container">
       {{ content }}
-    </div>
+    </section>
+
+    {% include foot.html %}
+
+    <script src="{{ site.baseurl }}/public/js/main.js" charset="utf-8"></script>
 
   </body>
 </html>
